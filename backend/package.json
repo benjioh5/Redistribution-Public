@@ -8,13 +8,9 @@
         "test:watch": "jest --watchAll",
         "clean": "rm -rf build public/bundle.js",
         "build": "babel server --out-dir build",
-        "build:solidity": "babel solidity_server --out-dir solidity_build",
         "build:dev": "babel server --out-dir build",
         "build:watch": "babel server --out-dir build --source-maps --watch",
-        "build:webloader": "./node_modules/.bin/webpack --env.prod --config webloader.config.js",
         "start": "NODE_ENV=production node ./build/main.js",
-        "start:solidity": "NODE_ENV=production node ./solidity_build/main.js",
-        "development": "NODE_ENV=development node ./build/main.js"
     },
     "author": "",
     "license": "ISC",
